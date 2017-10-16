@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppFormatacaoBasica"
+             x:Class="AppFormatacaoBasica.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="16" />
+                <!--Altura fixa-->
+                <RowDefinition Height="*" />
+                <!--Altura relativa-->
+                <RowDefinition Height="auto" />
+                <!--Altura altomatica-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="16" />
+                <!--Comprimento fixo-->
+                <ColumnDefinition Width="*" />
+                <!--Comprimento relativo-->
+                <ColumnDefinition Width="auto" />
+                <!--Comprimento automatico-->
+
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitulo"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Titulo" />
+            <!--*Span junta da posicao que esta da esquerda para a direita nao pode passar o numero de linha ou colunas  definido-->
+            <Image x:Name="imgIcone"
+                   Grid.Row="1" Grid.Column="0"
+                   Source="http://via.placeholder.com/32x32" />
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <Entry x:Name="txtNome" Placeholder="Entre com seu Nome" />
+                <Entry x:Name="txtEmail" Placeholder="Entre com seu E-mail" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button x:Name="btnLimpar"
+                        Text="Limpar" />
+                <Button x:Name="Exibir"
+                        Text="Exibir" />
+            </StackLayout>
+            <Label Grid.Row="2" Grid.Column="2" Text="Menu" />
+        </Grid>
+    </ContentPage.Content>
+
+
+
+</ContentPage>
