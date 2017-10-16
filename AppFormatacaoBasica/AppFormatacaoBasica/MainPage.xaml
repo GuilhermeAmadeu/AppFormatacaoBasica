@@ -14,7 +14,7 @@
                 <!--Altura altomatica-->
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="16" />
+                <ColumnDefinition Width="16"  />
                 <!--Comprimento fixo-->
                 <ColumnDefinition Width="*" />
                 <!--Comprimento relativo-->
